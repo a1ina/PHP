@@ -1,0 +1,5 @@
+<?php
+
+$section = file_get_contents('url', true);
+var_dump($section);
+?>
