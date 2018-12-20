@@ -1,0 +1,11 @@
+<?php $dir    = './wp-content/themes/findgo/list-region/';
+$files1 = scandir($dir);
+for($i = 0; $i <= count($files1); $i++){
+file_put_contents('./wp-content/themes/findgo/list-region/' . $files1[$i] .'/hotels/data.json', '');
+file_put_contents('./wp-content/themes/findgo/list-region/' . $files1[$i] .'/judaica-stores/data.json', '');
+file_put_contents('./wp-content/themes/findgo/list-region/' . $files1[$i] .'/kosher-stores/data.json', '');
+file_put_contents('./wp-content/themes/findgo/list-region/' . $files1[$i] .'/mikvah/data.json', '');
+file_put_contents('./wp-content/themes/findgo/list-region/' . $files1[$i] .'/restaurant/data.json', '');
+file_put_contents('./wp-content/themes/findgo/list-region/' . $files1[$i] .'/synagogues/data.json', '');
+}
+    ?>
